@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="22.888724">
+    <testcase classname="Fingertip Login test cases" name="Validate login functionlity" time="22.888724">
+        <system-out>
+            <![CDATA[Given user launches Url of fingertip........................................passed
+And user enters username and password.......................................passed
+And user click on login button..............................................passed
+Then user validate fingertip text in home page..............................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

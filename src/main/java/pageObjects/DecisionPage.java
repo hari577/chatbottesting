@@ -24,7 +24,7 @@ public class DecisionPage {
 	
 	public DecisionPage(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(new AjaxElementLocatorFactory(driver,75), this);
+		PageFactory.initElements(new AjaxElementLocatorFactory(driver,60), this);
 	}
 
 	WebDriver driver;
@@ -77,6 +77,8 @@ public class DecisionPage {
 	WebElement time;
 	@FindBy(xpath="//ul[@class='datepicker--time__list']/li")
 	List<WebElement> timedrop;
+	@FindBy(xpath="(//span[@class='tooltip'])[2]")
+	WebElement datevalidationdecis;
 	
 	
 	
@@ -252,8 +254,14 @@ public class DecisionPage {
 		  String text=errormessage.getText();
 		  System.out.println(text);
 		  System.out.println(errmessage);
+		  Thread.sleep(2000);
 		  if(text.equalsIgnoreCase(errmessage))
 		  {
+			/*
+			 * JavascriptExecutor js=(JavascriptExecutor) driver; js.
+			 * executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');"
+			 * , errmessage); Thread.sleep(3000);
+			 */
 			  System.out.println("Correct error message is dispayed");
 		  }
 		  else
@@ -287,19 +295,31 @@ public class DecisionPage {
      }
 
 	  public void decisionText(String text1) throws Exception{
-		  Thread.sleep(50000);
+		 // Thread.sleep(50000);
 		  if(decisiontext.isDisplayed())
 		  {
 			  JavascriptExecutor js= (JavascriptExecutor) driver;
 			  js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", decisiontext);
-			  Thread.sleep(4000);
+			  Thread.sleep(2000);
 			  String text2=decisiontext.getText();
 			  text2.equals(text1);
 		  }
 		  else
 		  {
 			  throw new Exception("Text not valid");
-		  }
-		  
+		  }	  
 	  }
+	 public void decisionDate(String text) throws Exception {
+		 if(datevalidationdecis.isDisplayed())
+		 {
+			 String text1=datevalidationdecis.getText();
+			 System.out.println(text1);
+			
+			  String datearray[]=text1.split("(");
+			  String date=datearray[0];
+			  System.out.println(date); text1.equals(text);		 
+		 }
+		 
+		 
+	 }
 }

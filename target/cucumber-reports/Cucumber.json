@@ -1,0 +1,119 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Jyothi G"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5788267588,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validate login functionlity",
+        "description": "",
+        "id": "fingertip-login-test-cases;validate-login-functionlity",
+        "after": [
+          {
+            "result": {
+              "duration": 190726,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1208463122,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2897911759,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user launches Url of fingertip",
+            "match": {
+              "location": "FingerTipStepDefi.user_launches_Url_of_fingertip()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 419389863,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters username and password",
+            "match": {
+              "location": "FingerTipStepDefi.user_enters_username_and_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11905789274,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click on login button",
+            "match": {
+              "location": "FingerTipStepDefi.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 668711203,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validate fingertip text in home page",
+            "match": {
+              "location": "FingerTipStepDefi.user_validate_fingertip_text_in_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Fingertip Login test cases",
+    "description": "",
+    "id": "fingertip-login-test-cases",
+    "keyword": "Feature",
+    "uri": "loginFingerTip.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@fingerTipLogin"
+      }
+    ]
+  }
+]

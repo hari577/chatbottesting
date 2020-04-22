@@ -93,6 +93,7 @@ Feature: Fingertip Decisions test cases
     And user selects "1/MAY/2019" in date picker
     And I click on share button
     Then I vaidate text "<Title>" in Decision page
+    #Then I validate time "5/1/2020" in decision
 
     Examples: 
       | Title                          | Description          |
@@ -131,7 +132,7 @@ Feature: Fingertip Decisions test cases
     #And click on continue button
     And user enters "<Title>" in NewDecision page
     And user enters "<Description>" in decision page
-    And user selects "8/APRIL/2019" in date picker
+    And user selects "23/june/2023" in date picker
     And user selects "11:00 AM" in time section
     And I click on share button
     Then I vaidate text "<Title>" in Decision page
@@ -232,7 +233,7 @@ Feature: Fingertip Decisions test cases
     #And click on continue button
     And user enters "<Title>" in NewDecision page
     And user enters "<Description>" in decision page
-    And user selects "VeryLow" as priority
+    And user selects "Very Low" as priority
     And I click on share button
     Then I vaidate text "<Title>" in Decision page
 

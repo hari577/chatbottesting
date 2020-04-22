@@ -1,0 +1,4 @@
+stepDefinitions\Hooks.class
+runnersClass\TestCucumberRunner.class
+stepDefinitions\DecisionsSmokeStepDef.class
+stepDefinitions\FingerTipStepDefi.class

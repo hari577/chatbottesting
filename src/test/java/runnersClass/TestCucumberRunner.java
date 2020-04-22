@@ -13,7 +13,12 @@ import managers.FileReaderManager;
 		features = "resources/functionalTests",
 		glue= {"stepDefinitions"},
 		dryRun=false,
-		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/fingerTipReports.html"},
+		strict=true,
+				 
+		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/fingerTipReports.html","pretty","json:target/cucumber-reports/Cucumber.json",
+				 "junit:target/cucumber-reports/Cucumber.xml",
+				 "html:target/cucumber-reports"},
+				
 		tags= {"@login"}, monochrome = false
 		
 		)

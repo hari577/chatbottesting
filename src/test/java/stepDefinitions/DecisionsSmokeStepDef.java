@@ -63,5 +63,9 @@ public class DecisionsSmokeStepDef {
     public void time_in_decision_page(String tim) throws Throwable {
     	decisionpage.setTime(tim);
     }
+    @Then("^I validate time \"([^\"]*)\" in decision$")
+    public void i_validate_time_in_decision(String text) throws Throwable {
+        decisionpage.decisionDate(text);
+    }
    
 }
