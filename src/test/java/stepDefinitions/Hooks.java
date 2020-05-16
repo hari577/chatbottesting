@@ -31,7 +31,7 @@ public class Hooks {
 			String screenshotName = scenario.getName().replaceAll(" ", "_");
 			try {
 				File sourcePath = ((TakesScreenshot) testContext.getWebDriverManager().getDriver()).getScreenshotAs(OutputType.FILE);
-				File destinationPath = new File(System.getProperty("user.dir") + "/target/Screenshots/" + screenshotName + ".png");
+				File destinationPath = new File(System.getProperty("user.dir") + "/Screenshots/" + screenshotName + ".png");
 				Files.copy(sourcePath, destinationPath);    	
 				Reporter.addScreenCaptureFromPath(destinationPath.toString());
 			} catch (IOException e) {

@@ -19,7 +19,7 @@ import managers.FileReaderManager;
 				 "junit:target/cucumber-reports/Cucumber.xml",
 				 "html:target/cucumber-reports"},
 				
-		tags= {"@login"}, monochrome = false
+		tags= {"@decisiontestcase14"}, monochrome = false
 		
 		)
  

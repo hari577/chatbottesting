@@ -1,5 +1,7 @@
 package pageObjects;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -94,7 +96,7 @@ public void textValidation() throws Exception
 			 
     	  String text1=homeText.getText();
     	  String text2="Fingertip";
-    	  text1.equals(text2);
+    	  assertEquals(text1,text2);
     	  
 		/*
 		 * } else { throw new Exception("text is incorrect"); }
@@ -109,7 +111,7 @@ public void textValidation() throws Exception
  			 
      	  String text1=invalidtext.getText();
      	  String text2="Please check your username and password. If you still can't log in, contact your Salesforce administrator.";
-     	  text1.equals(text2);
+     	  assertEquals(text1,text2);
      	  
  		/*
  		 * } else { throw new Exception("text is incorrect"); }

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="22.888724">
-    <testcase classname="Fingertip Login test cases" name="Validate login functionlity" time="22.888724">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="168.708827">
+    <testcase classname="Fingertip Decisions test cases" name="Test case to validate whether decision created with priority" time="168.708827">
         <system-out>
             <![CDATA[Given user launches Url of fingertip........................................passed
 And user enters username and password.......................................passed
 And user click on login button..............................................passed
 Then user validate fingertip text in home page..............................passed
+And Click on Decision Tab...................................................passed
+And Click on New button.....................................................passed
+And user enters "xx_testdecision_check_2_jyothi" in NewDecision page........passed
+And user enters "Test description xx2" in decision page.....................passed
+And user selects "Very Low" as priority.....................................passed
+And I click on backup for accoutable link...................................passed
+Then Enter "Sunil George" in backup for accoutable link.....................passed
+And user validate "Sunil George" in responsible field.......................passed
+And I click on Consulted button.............................................passed
+Then Enter "Sunil George" in Consulted link.................................passed
+And I click on Informed button..............................................passed
+Then Enter "Sunil George" in Informed link..................................passed
+Then CLick on Share button..................................................passed
+And I vaidate text "xx_testdecision_check_2_jyothi" in Decision page........passed
 ]]>
         </system-out>
     </testcase>

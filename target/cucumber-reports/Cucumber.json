@@ -3,16 +3,16 @@
     "comments": [
       {
         "line": 1,
-        "value": "#Author: Jyothi G"
+        "value": "#Author:Jyothi G"
       }
     ],
-    "line": 4,
+    "line": 3,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 5788267588,
+              "duration": 4617876548,
               "status": "passed"
             },
             "match": {
@@ -20,14 +20,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "Validate login functionlity",
+        "line": 298,
+        "name": "Test case to validate whether decision created with priority",
         "description": "",
-        "id": "fingertip-login-test-cases;validate-login-functionlity",
+        "id": "fingertip-decisions-test-cases;test-case-to-validate-whether-decision-created-with-priority;;2",
         "after": [
           {
             "result": {
-              "duration": 190726,
+              "duration": 138554,
               "status": "passed"
             },
             "match": {
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 1208463122,
+              "duration": 1037552418,
               "status": "passed"
             },
             "match": {
@@ -45,14 +45,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2897911759,
+              "duration": 5564917693,
               "status": "passed"
             },
-            "line": 8,
+            "line": 275,
             "name": "user launches Url of fingertip",
             "match": {
               "location": "FingerTipStepDefi.user_launches_Url_of_fingertip()"
@@ -61,10 +61,10 @@
           },
           {
             "result": {
-              "duration": 419389863,
+              "duration": 327574219,
               "status": "passed"
             },
-            "line": 9,
+            "line": 276,
             "name": "user enters username and password",
             "match": {
               "location": "FingerTipStepDefi.user_enters_username_and_password()"
@@ -73,10 +73,10 @@
           },
           {
             "result": {
-              "duration": 11905789274,
+              "duration": 79829522527,
               "status": "passed"
             },
-            "line": 10,
+            "line": 277,
             "name": "user click on login button",
             "match": {
               "location": "FingerTipStepDefi.user_click_on_login_button()"
@@ -85,34 +85,273 @@
           },
           {
             "result": {
-              "duration": 668711203,
+              "duration": 258644446,
               "status": "passed"
             },
-            "line": 11,
+            "line": 278,
             "name": "user validate fingertip text in home page",
             "match": {
               "location": "FingerTipStepDefi.user_validate_fingertip_text_in_home_page()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 361437421,
+              "status": "passed"
+            },
+            "line": 279,
+            "name": "Click on Decision Tab",
+            "match": {
+              "location": "DecisionsSmokeStepDef.click_on_Decision_Tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39398555788,
+              "status": "passed"
+            },
+            "line": 280,
+            "name": "Click on New button",
+            "match": {
+              "location": "DecisionsSmokeStepDef.click_on_New_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4657751457,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 281,
+                "value": "#And User select \"Decision\" frm the dropdown"
+              },
+              {
+                "line": 282,
+                "value": "#And click on continue button"
+              }
+            ],
+            "line": 283,
+            "name": "user enters \"xx_testdecision_check_2_jyothi\" in NewDecision page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xx_testdecision_check_2_jyothi",
+                  "offset": 13
+                }
+              ],
+              "location": "DecisionsSmokeStepDef.user_enters_in_NewDecision_page(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1105145828,
+              "status": "passed"
+            },
+            "line": 284,
+            "name": "user enters \"Test description xx2\" in decision page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test description xx2",
+                  "offset": 13
+                }
+              ],
+              "location": "DecisionsSmokeStepDef.user_enters_in_decision_page(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 519920134,
+              "status": "passed"
+            },
+            "line": 285,
+            "name": "user selects \"Very Low\" as priority",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Very Low",
+                  "offset": 14
+                }
+              ],
+              "location": "DecisionsSmokeStepDef.user_selects_as_priority(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 359873984,
+              "status": "passed"
+            },
+            "line": 286,
+            "name": "I click on backup for accoutable link",
+            "match": {
+              "location": "DecisionsSmokeStepDef.i_click_on_backup_for_accoutable_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4595625371,
+              "status": "passed"
+            },
+            "line": 287,
+            "name": "Enter \"Sunil George\" in backup for accoutable link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunil George",
+                  "offset": 7
+                }
+              ],
+              "location": "DecisionsSmokeStepDef.enter_in_backup_for_accoutable_link(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 154587379,
+              "status": "passed"
+            },
+            "line": 288,
+            "name": "user validate \"Sunil George\" in responsible field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunil George",
+                  "offset": 15
+                }
+              ],
+              "location": "DecisionsSmokeStepDef.user_validate_in_responsible_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 240192385,
+              "status": "passed"
+            },
+            "line": 289,
+            "name": "I click on Consulted button",
+            "match": {
+              "location": "DecisionsSmokeStepDef.i_click_on_Consulted_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4232888791,
+              "status": "passed"
+            },
+            "line": 290,
+            "name": "Enter \"Sunil George\" in Consulted link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunil George",
+                  "offset": 7
+                }
+              ],
+              "location": "DecisionsSmokeStepDef.enter_in_Consulted_link(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 231516081,
+              "status": "passed"
+            },
+            "line": 291,
+            "name": "I click on Informed button",
+            "match": {
+              "location": "DecisionsSmokeStepDef.i_click_on_Informed_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4543774520,
+              "status": "passed"
+            },
+            "line": 292,
+            "name": "Enter \"Sunil George\" in Informed link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sunil George",
+                  "offset": 7
+                }
+              ],
+              "location": "DecisionsSmokeStepDef.enter_in_Informed_link(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 372569211,
+              "status": "passed"
+            },
+            "line": 293,
+            "name": "CLick on Share button",
+            "match": {
+              "location": "DecisionsSmokeStepDef.click_on_Share_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16298761823,
+              "status": "passed"
+            },
+            "line": 294,
+            "name": "I vaidate text \"xx_testdecision_check_2_jyothi\" in Decision page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xx_testdecision_check_2_jyothi",
+                  "offset": 16
+                }
+              ],
+              "location": "DecisionsSmokeStepDef.i_vaidate_text_in_Decision_page(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 6,
-            "name": "@login"
+            "line": 273,
+            "name": "@decisiontestcase14"
+          },
+          {
+            "line": 2,
+            "name": "@fingerTipDecisions"
           }
         ]
       }
     ],
-    "name": "Fingertip Login test cases",
+    "name": "Fingertip Decisions test cases",
     "description": "",
-    "id": "fingertip-login-test-cases",
+    "id": "fingertip-decisions-test-cases",
     "keyword": "Feature",
-    "uri": "loginFingerTip.feature",
+    "uri": "decisionsTab.feature",
     "tags": [
       {
-        "line": 3,
-        "name": "@fingerTipLogin"
+        "line": 2,
+        "name": "@fingerTipDecisions"
       }
     ]
   }
