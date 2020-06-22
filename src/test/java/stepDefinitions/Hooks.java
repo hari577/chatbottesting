@@ -22,7 +22,7 @@ public class Hooks {
 	
 	@Before
 	public void beforeScenario(Scenario scenario) {
-	    Reporter.assignAuthor("Jyothi G");
+	    Reporter.assignAuthor("syed ibrahim taher");
 	}
 	
 	@After(order = 1)

@@ -8,13 +8,13 @@ import managers.PageObjectManager;
 		private WebDriverManager webDriverManager;
 		private PageObjectManager pageObjectManager;
 		private ScenarioContext scenarioContext;
-	//	public CommonMethods commonmethod;
+	
 		
 		public TestContext(){
 			webDriverManager = new WebDriverManager();
 			pageObjectManager = new PageObjectManager(webDriverManager.getDriver());
 			scenarioContext = new ScenarioContext();
-		//	commonmethod=new CommonMethods();
+		
 		}
 		
 		public WebDriverManager getWebDriverManager() {

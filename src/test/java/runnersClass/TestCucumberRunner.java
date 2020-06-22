@@ -15,11 +15,11 @@ import managers.FileReaderManager;
 		dryRun=false,
 		strict=true,
 				 
-		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/fingerTipReports.html","pretty","json:target/cucumber-reports/Cucumber.json",
+		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/botReports.html","pretty","json:target/cucumber-reports/Cucumber.json",
 				 "junit:target/cucumber-reports/Cucumber.xml",
 				 "html:target/cucumber-reports"},
 				
-		tags= {"@decisiontestcase14"}, monochrome = false
+		tags= {"@testcase1"}, monochrome = false
 		
 		)
  
