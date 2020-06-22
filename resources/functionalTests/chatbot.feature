@@ -7,6 +7,6 @@ Feature: Verify chatbot testing
   Scenario: Title of your scenario
     Given user launches Url of usaphilips
     And user click on Go to advisor button
-    And validate text "Hello, I am your Soncare Brush Head Advisor Bot"
+    And validate text "Hello, I am your Sonicare Brush Head Advisor Bot"
 
 

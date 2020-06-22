@@ -18,7 +18,7 @@ public class chatbotpage {
 	public chatbotpage(WebDriver driver)
 	{
 		this.driver = driver;
-		PageFactory.initElements(new AjaxElementLocatorFactory(driver, 30), this);
+		PageFactory.initElements(new AjaxElementLocatorFactory(driver, 80), this);
 	}
 	@FindBy(xpath = "//span[text()='Go to advisor']")
 	WebElement advisorbutton;
@@ -49,6 +49,7 @@ public class chatbotpage {
 			String text1 = Sonicaretext.getText();
 			assertEquals(text1, text);
 			System.out.println(text1);
+			Thread.sleep(3000);
 		}
 	}
 }

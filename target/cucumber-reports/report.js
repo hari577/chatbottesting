@@ -19,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 4366104640,
+  "duration": 4213406128,
   "status": "passed"
 });
 formatter.scenario({
@@ -55,14 +55,14 @@ formatter.match({
   "location": "chatbotstepdefinition.user_launches_Url_of_usaphilips()"
 });
 formatter.result({
-  "duration": 12844704029,
+  "duration": 17455994129,
   "status": "passed"
 });
 formatter.match({
   "location": "chatbotstepdefinition.user_click_on_Go_to_advisor_button()"
 });
 formatter.result({
-  "duration": 219233095,
+  "duration": 212679148,
   "status": "passed"
 });
 formatter.match({
@@ -75,15 +75,15 @@ formatter.match({
   "location": "chatbotstepdefinition.validate_text(String)"
 });
 formatter.result({
-  "duration": 19698243015,
+  "duration": 22617043514,
   "status": "passed"
 });
 formatter.after({
-  "duration": 141548,
+  "duration": 279674,
   "status": "passed"
 });
 formatter.after({
-  "duration": 977260889,
+  "duration": 1034276300,
   "status": "passed"
 });
 });
